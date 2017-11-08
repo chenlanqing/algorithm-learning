@@ -3,7 +3,7 @@ import com.algorithm.sort.advanced.heap.HeapSort2;
 import com.algorithm.sort.advanced.merge.MergeSortOpt;
 import com.algorithm.sort.advanced.quick.QuickSort;
 import com.algorithm.sort.advanced.quick.QuickSort3Ways;
-import com.algorithm.util.ArrayUtils;
+import com.util.ArrayUtils;
 import org.junit.Test;
 
 public class TestAdvancedSort {

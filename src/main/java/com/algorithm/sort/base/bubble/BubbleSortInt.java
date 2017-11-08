@@ -1,7 +1,7 @@
 package com.algorithm.sort.base.bubble;
 
 import com.algorithm.sort.SortInt;
-import com.algorithm.util.ArrayUtils;
+import com.util.ArrayUtils;
 
 import java.util.Arrays;
 

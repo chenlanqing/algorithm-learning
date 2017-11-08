@@ -1,7 +1,7 @@
 package com.algorithm.sort.advanced.heap;
 
 import com.algorithm.sort.SortInt;
-import com.algorithm.util.ArrayUtils;
+import com.util.ArrayUtils;
 
 /**
  * 开辟了额外的数组空间

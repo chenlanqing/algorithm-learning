@@ -20,7 +20,7 @@ public class BaseBinarySearch {
         // 从[l...r]中查找
         int l = 0, r = len - 1;
         while (l <= r) {
-//            int mid = (l + r) / 2;// 这里,如果在极限情况下,可能有bug
+//            int mid = (l + r) / 2;// 这里,如果在极限情况下,可能出现int溢出
             int mid = l + (r - l) / 2;
             if (arr[mid] == data) {
                 return mid;

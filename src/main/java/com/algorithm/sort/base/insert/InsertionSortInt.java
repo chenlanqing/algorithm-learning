@@ -2,7 +2,7 @@ package com.algorithm.sort.base.insert;
 
 import com.algorithm.sort.SortInt;
 import com.algorithm.sort.base.select.SelectSortInt;
-import com.algorithm.util.ArrayUtils;
+import com.util.ArrayUtils;
 
 import java.util.Arrays;
 

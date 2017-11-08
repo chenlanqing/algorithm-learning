@@ -1,4 +1,4 @@
-package com.algorithm.util;
+package com.util;
 
 import com.algorithm.sort.SortInt;
 

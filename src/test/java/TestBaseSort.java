@@ -1,10 +1,8 @@
 import com.algorithm.sort.base.bubble.BubbleSortInt;
 import com.algorithm.sort.base.bubble.BubbleSortIntOpt1;
 import com.algorithm.sort.base.bubble.BubbleSortIntOpt2;
-import com.algorithm.sort.base.insert.InsertSelectIntOpt;
-import com.algorithm.sort.base.select.SelectSortInt;
 import com.algorithm.sort.base.shell.ShellSortInt;
-import com.algorithm.util.ArrayUtils;
+import com.util.ArrayUtils;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -14,16 +12,16 @@ public class TestBaseSort {
 
     @Test
     public void compareSort(){
-        int n = 100000;
-        int[] select = ArrayUtils.generateRandomArray(n, 1, 1000000);
-        int[] insert = ArrayUtils.copy(select, n);
-        int[] bubble = ArrayUtils.copy(select, n);
-        int[] shell = ArrayUtils.copy(select, n);
-
-        ArrayUtils.testSort("选择排序:", new SelectSortInt(), select, n);
-        ArrayUtils.testSort("插入排序:", new InsertSelectIntOpt(), insert, n);
-        ArrayUtils.testSort("冒泡排序:", new BubbleSortIntOpt2(), bubble, n);
-        ArrayUtils.testSort("希尔排序:", new ShellSortInt(), shell, n);
+//        int n = 100000;
+//        int[] select = ArrayUtils.generateRandomArray(n, 1, 1000000);
+//        int[] insert = ArrayUtils.copy(select, n);
+//        int[] bubble = ArrayUtils.copy(select, n);
+//        int[] shell = ArrayUtils.copy(select, n);
+//
+//        ArrayUtils.testSort("选择排序:", new SelectSortInt(), select, n);
+//        ArrayUtils.testSort("插入排序:", new InsertSelectIntOpt(), insert, n);
+//        ArrayUtils.testSort("冒泡排序:", new BubbleSortIntOpt2(), bubble, n);
+//        ArrayUtils.testSort("希尔排序:", new ShellSortInt(), shell, n);
     }
 
     @Test
