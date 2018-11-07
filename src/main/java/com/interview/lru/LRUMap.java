@@ -37,9 +37,9 @@ public class LRUMap<K, V> {
         header.next = null;
         // 尾节点上一个节点为空
         this.tailer = new Node<>();
-        tailer.tail = null;
+        tailer.pre = null;
         // 双向链表,头节点的上一个节点指向尾节点
-        header.tail = tailer;
+        header.pre = tailer;
         // 尾节点的下一个节点指向头结点
         tailer.next = header;
     }
@@ -58,8 +58,8 @@ public class LRUMap<K, V> {
 
     private void moveToHead(Node<K, V> node) {
         // 如果是最后一个节点
-        if(node.tail ==null) {
-            node.next.tail = null;
+        if(node.pre ==null) {
+            node.next.pre = null;
             tailer = node.next;
             nodeCount--;
         }
@@ -68,8 +68,8 @@ public class LRUMap<K, V> {
             return;
         }
         // 如果处于中间节点
-        if (node.tail != null && node.next != null){
-            node.tail.next = node.next;
+        if (node.pre != null && node.next != null){
+            node.pre.next = node.next;
             nodeCount--;
         }
         node = new Node<>(node.getKey(), node.getValue());
@@ -116,21 +116,21 @@ public class LRUMap<K, V> {
      */
     private void addHead(Node<K, V> node) {
         header.next = node;
-        node.tail = header;
+        node.pre = header;
 
         header = node;
         nodeCount++;
 
         // 如果写入的数据大于2个,就将初始化的头尾节点删除
         if (nodeCount == 2) {
-            tailer.next.next.tail = null;
+            tailer.next.next.pre = null;
             tailer = tailer.next.next;
         }
     }
 
     private void delTail(){
         cacheMap.remove(tailer.getKey());
-        tailer.next.tail = null;
+        tailer.next.pre = null;
         tailer = tailer.next;
         nodeCount --;
     }
@@ -138,7 +138,7 @@ public class LRUMap<K, V> {
     private class Node<K, V> {
         private K key;
         private V value;
-        Node<K, V> tail;
+        Node<K, V> pre;
         Node<K, V> next;
 
         public Node(K key, V value) {
