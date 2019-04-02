@@ -1,6 +1,6 @@
 package com.algorithm.search.binary;
 
-import com.util.FileUtils;
+import com.algorithm.common.util.FileUtils;
 import org.junit.Test;
 
 import java.io.InputStream;
