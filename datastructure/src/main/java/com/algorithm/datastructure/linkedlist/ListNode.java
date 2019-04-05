@@ -1,4 +1,4 @@
-package com.algorithm.linkedlist;
+package com.algorithm.datastructure.linkedlist;
 
 /**
  * @author bluefish 2018/7/16

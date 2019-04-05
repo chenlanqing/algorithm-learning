@@ -1,4 +1,4 @@
-package com.algorithm.linkedlist;
+package com.algorithm.datastructure.linkedlist;
 
 /**
  * 给定单链表、值val，删除所有值为val的节点

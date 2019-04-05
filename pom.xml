@@ -15,8 +15,6 @@
         <module>datastructure</module>
         <module>interview</module>
         <module>tree</module>
-        <module>array</module>
-        <module>linked-list</module>
     </modules>
 
     <parent>

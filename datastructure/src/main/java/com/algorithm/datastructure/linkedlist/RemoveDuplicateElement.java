@@ -1,4 +1,4 @@
-package com.algorithm.linkedlist;
+package com.algorithm.datastructure.linkedlist;
 
 /**
  * 删除链表中的重复元素
