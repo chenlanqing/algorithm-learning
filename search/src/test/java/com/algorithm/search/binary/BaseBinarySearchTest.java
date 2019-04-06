@@ -13,8 +13,6 @@ public class BaseBinarySearchTest {
 
     @Before
     public void init(){
-        int N = 10;
-        int M = 100;
         for(int i = 0 ; i < N ; i ++){
             Integer key = new Integer((int)(Math.random()*M));
             // 为了后续测试方便,这里value值取和key值一样
@@ -72,6 +70,7 @@ public class BaseBinarySearchTest {
 
 
     // 测试二分搜索树的遍历
+    @Test
     public void test3(){
         // 测试二分搜索树的size()
         System.out.println("size: " + bst.size());
@@ -96,5 +95,9 @@ public class BaseBinarySearchTest {
         System.out.println("levelOrder: ");
         bst.levelOrder();
         System.out.println();
+
+        // 测试二分搜索树的层序遍历 maxDepth
+        System.out.println("maxDepth: ");
+        System.out.println(bst.maxDepth());
     }
 }

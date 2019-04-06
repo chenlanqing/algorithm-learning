@@ -15,8 +15,10 @@ import java.util.LinkedList;
  */
 public class BinarySearchTree<K extends Comparable<K>, V> {
 
-    private Node root;//根节点
-    private int count;//树中节点个数
+    //根节点
+    private Node root;
+    //树中节点个数
+    private int count;
 
     public BinarySearchTree() {
         this.root = null;
@@ -93,7 +95,12 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
         return min.key;
     }
 
-    // 查询以node为根节点的二叉搜索树中，最小值
+    /**
+     * 查询以node为根节点的二叉搜索树中，最小值
+     *
+     * @param node
+     * @return
+     */
     private Node minimum(Node node) {
         // 使用递归
         if (node.left == null) {
@@ -118,7 +125,12 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
         return node.key;
     }
 
-    // 查询以node为根节点的二叉搜索树中，最大值
+    /**
+     * 查询以node为根节点的二叉搜索树中，最大值
+     *
+     * @param node
+     * @return
+     */
     private Node maximum(Node node) {
         if (node.right == null) {
             return node;
@@ -184,7 +196,12 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
         }
     }
 
-    // 删除以node为根节点的二叉搜索树中的最小值
+    /**
+     * 删除以node为根节点的二叉搜索树中的最小值
+     *
+     * @param node
+     * @return
+     */
     private Node removeMin(Node node) {
         if (node.left == null) {
             Node rightNode = node.right;
@@ -205,7 +222,12 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
         }
     }
 
-    // 删除掉以node为根的二分搜索树中的最大节点,返回删除节点后新的二分搜索树的根
+    /**
+     * 删除掉以node为根的二分搜索树中的最大节点,返回删除节点后新的二分搜索树的根
+     *
+     * @param node
+     * @return
+     */
     private Node removeMax(Node node) {
         if (node.right == null) {
             Node leftNode = node.left;
@@ -231,12 +253,12 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
      * (1).需要删除的 key 是叶子节点,直接删除该节点;<br/>
      * (2).需要删除的 key 只有一个子节点(左子节点或右子节点),将其子节点与父节点相连即可;<br/>
      * (3).需要删除的 key 左右子节点都不为空,有个著名的算法 Hubbard Deletion.该算法策略是:<br/>
-     *     使用删除节点的右子树中最小的值替代该节点,并删除掉右子树中最小的值.<br/>
-     *     或者是使用要删除节点中左子树中最大值替代该节点,并删除左子树中最大的值
+     * 使用删除节点的右子树中最小的值替代该节点,并删除掉右子树中最小的值.<br/>
+     * 或者是使用要删除节点中左子树中最大值替代该节点,并删除左子树中最大的值
      *
-     * @param node  根节点
-     * @param key   需要删除的节点
-     * @return  返回删除后新的节点
+     * @param node 根节点
+     * @param key  需要删除的节点
+     * @return 返回删除后新的节点
      */
     private Node remove(Node node, K key) {
         if (node == null) {
@@ -283,6 +305,22 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
     }
 
     // 遍历
+
+    /**
+     * 求树的最高高度
+     *
+     * @return
+     */
+    public int maxDepth() {
+        return maxDepth(root);
+    }
+
+    private int maxDepth(Node node) {
+        if (node == null) {
+            return 0;
+        }
+        return Math.max(maxDepth(node.left), maxDepth(node.right)) + 1;
+    }
 
     /**
      * 前序遍历
@@ -347,9 +385,29 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
         }
     }
 
+    /**
+     * 反转二叉树
+     *
+     * @return
+     */
+    Node invertTree(Node root) {
+        if (root == null) {
+            return null;
+        }
+        invertTree(root.left);
+        invertTree(root.right);
 
-    //数的节点结构
-    private class Node {
+        Node temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+        return root;
+    }
+
+
+    /**
+     * 数的节点结构
+     */
+    public class Node {
         private K key;
         private V value;
         private Node left;
