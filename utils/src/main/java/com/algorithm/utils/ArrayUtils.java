@@ -1,7 +1,7 @@
-package com.algorithm.common.util;
+package com.algorithm.utils;
 
 
-import com.algorithm.common.sort.SortInt;
+import com.algorithm.utils.sort.SortInt;
 
 import java.util.Arrays;
 import java.util.Random;

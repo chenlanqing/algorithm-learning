@@ -1,9 +1,9 @@
 package com.algorithm.sort.advanced.quick;
 
-import com.algorithm.common.sort.SortInt;
+import com.algorithm.utils.ArrayUtils;
+import com.algorithm.utils.sort.SortInt;
 import com.algorithm.sort.advanced.merge.MergeSortOpt;
 import com.algorithm.sort.base.insert.InsertSelectIntOpt;
-import com.algorithm.common.util.ArrayUtils;
 
 /**
  * 快速排序:3路快速排序

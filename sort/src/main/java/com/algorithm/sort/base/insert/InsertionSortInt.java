@@ -1,8 +1,8 @@
 package com.algorithm.sort.base.insert;
 
-import com.algorithm.common.sort.SortInt;
+import com.algorithm.utils.ArrayUtils;
+import com.algorithm.utils.sort.SortInt;
 import com.algorithm.sort.base.select.SelectSortInt;
-import com.algorithm.common.util.ArrayUtils;
 
 import java.util.Arrays;
 

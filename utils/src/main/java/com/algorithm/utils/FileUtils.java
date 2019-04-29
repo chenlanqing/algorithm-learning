@@ -1,4 +1,4 @@
-package com.algorithm.common.util;
+package com.algorithm.utils;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;

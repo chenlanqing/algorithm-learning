@@ -1,8 +1,8 @@
 package com.algorithm.sort.advanced.heap;
 
 
-import com.algorithm.common.sort.SortInt;
-import com.algorithm.common.util.ArrayUtils;
+import com.algorithm.utils.ArrayUtils;
+import com.algorithm.utils.sort.SortInt;
 
 /**
  * Created by BlueFish on 2017/5/6.

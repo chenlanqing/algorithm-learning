@@ -1,8 +1,8 @@
 package com.algorithm.sort.advanced.merge;
 
-import com.algorithm.common.sort.SortInt;
+import com.algorithm.utils.ArrayUtils;
+import com.algorithm.utils.sort.SortInt;
 import com.algorithm.sort.base.insert.InsertSelectIntOpt;
-import com.algorithm.common.util.ArrayUtils;
 
 /**
  * 归并
