@@ -20,7 +20,7 @@ package com.algorithm.datastructure.linkedlist;
 public class RemoveElement {
     public static void main(String[] args) {
         int[] array = {1, 1, 2, 3, 4, 3, 5, 4};
-        ListNode head = ListNode.arrayToList(array);
+        ListNode head = ListNode.arrayToNode(array);
         ListNode.printList(head);
         System.out.println("~~~~~~~");
         ListNode listNode = removeElements(head, 3);

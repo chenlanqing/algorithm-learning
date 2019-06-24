@@ -365,6 +365,29 @@ public class BinarySearchTree<K extends Comparable<K>, V> {
     }
 
     /**
+     * 根据前序遍历和中序遍历构造出二叉树，前序遍历第一个节点是根节点，根据该根节点找到其在中序遍历的位置，该位置的左边是根节点的左子树部分，右边是右子树部分；
+     *
+     * @param preOrder
+     * @param inOrder
+     * @return
+     */
+//    public Node createTreeFromPreOrderAndMidOrder(String preOrder, String inOrder) {
+//        if (preOrder == null || preOrder.isEmpty()) {
+//            return null;
+//        }
+//
+//        char rootValue = preOrder.charAt(0);
+//        int rootIndex = inOrder.indexOf(rootValue);
+//
+//        Node root = new Node(rootValue);
+//
+//        root.left = createTreeFromPreOrderAndMidOrder(preOrder.substring(1, 1 + rootIndex), inOrder.substring(0, rootIndex));
+//        root.right = createTreeFromPreOrderAndMidOrder(preOrder.substring(1 + rootIndex), inOrder.substring(1 + rootIndex));
+//
+//        return root;
+//    }
+
+    /**
      * 层序遍历二分搜索树:借助队列先进先出的特性
      */
     public void levelOrder() {

@@ -1,5 +1,8 @@
 package com.algorithm.datastructure.linkedlist;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author bluefish 2018/7/16
  * @version 1.0.0
@@ -33,7 +36,29 @@ public class ListNode {
         System.out.println();
     }
 
-    public static ListNode arrayToList(int[] array) {
+    /**
+     * 将一个数组转换为链表
+     *
+     * @param array
+     * @return
+     */
+    public static ListNode arrayToNode(int[] array) {
+        ListNode head = new ListNode(0);
+        ListNode p = head;
+        for (int value : array) {
+            p.next = new ListNode(value);
+            p = p.next;
+        }
+        return head.next;
+    }
+
+    /**
+     * 将一个集合转换为俩表
+     *
+     * @param array
+     * @return
+     */
+    public static ListNode listToNode(List<Integer> array) {
         ListNode head = new ListNode(0);
         ListNode p = head;
         for (int value : array) {
