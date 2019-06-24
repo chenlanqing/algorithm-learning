@@ -21,7 +21,8 @@ public class BaseBinarySearch {
         int l = 0, r = len - 1;
         while (l <= r) {
 //            int mid = (l + r) / 2;// 这里,如果在极限情况下,可能出现int溢出
-            int mid = l + (r - l) / 2;
+//            int mid = l + (r - l) / 2;
+            int mid = l + ((r - l) >>> 1);
             if (arr[mid] == data) {
                 return mid;
             }
