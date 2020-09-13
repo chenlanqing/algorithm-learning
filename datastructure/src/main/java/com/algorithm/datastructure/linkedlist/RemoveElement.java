@@ -27,9 +27,9 @@ public class RemoveElement {
         ListNode.printList(listNode);
     }
 
-    public static ListNode removeElements(ListNode head, int val) {
+    private static ListNode removeElements(ListNode head, int val) {
         if (head == null) {
-            return head;
+            return null;
         } else {
             // 考虑到 head 节点被删除的情况
             ListNode newHead = new ListNode(0);

@@ -1,6 +1,5 @@
 package com.algorithm.datastructure.linkedlist;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

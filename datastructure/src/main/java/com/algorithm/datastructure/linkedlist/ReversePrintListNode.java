@@ -5,6 +5,11 @@ import java.util.Stack;
 /**
  * 逆序打印链表
  *
+ * <p>
+ * 方法1：使用额外的空间（栈来实现）{@link com.algorithm.datastructure.linkedlist.ReversePrintListNode#reverseNode}
+ * <p>
+ * 方法2：使用递归来实现 {@link com.algorithm.datastructure.linkedlist.ReversePrintListNode#recursiveReverseNode}
+ *
  * @author bluefish 2019-06-24
  * @version 1.0.0
  */
@@ -14,44 +19,54 @@ public class ReversePrintListNode {
         int[] array = {1, 2, 3, 4, 5, 6};
         ListNode head = ListNode.arrayToNode(array);
 
-        printListNodeByLoop(head);
+        reverseNode(head);
+
+        System.out.println();
+
+        recursiveReverseNode(head);
     }
 
     /**
-     * 使用循环逆序打印链表：使用栈结构
-     * <p>
-     * 时间复杂度O(N)，空间复杂度O(N)
+     * 使用递归来实现：时间复杂度：O(N)，空间复杂度：O(1)
      *
      * @param head
      */
-    private static void printListNodeByLoop(ListNode head) {
-        if (head.next == null) {
+    public static void recursiveReverseNode(ListNode head) {
+        if (head == null || head.next == null) {
             return;
         }
-        Stack<Integer> stack = new Stack<Integer>();
+
+        recursive(head);
+    }
+
+    private static void recursive(ListNode p) {
+        if (p != null) {
+            recursive(p.next);
+            System.out.print(p.value + "    ");
+        }
+    }
+
+    /**
+     * 使用栈来反转，时间复杂度：O(N)，空间复杂度：O(N)
+     *
+     * @param head
+     */
+    public static void reverseNode(ListNode head) {
+        if (head == null || head.next == null) {
+            return;
+        }
+
+        Stack<Integer> stack = new Stack<>();
         ListNode p = head;
+
         while (p != null) {
             stack.push(p.value);
             p = p.next;
         }
+
         while (!stack.isEmpty()) {
-            System.out.print(stack.pop() + " ");
+            System.out.print(stack.pop() + "    ");
         }
         System.out.println();
     }
-
-    private void printReverseRecursive(ListNode head){
-        if(head.next == null){
-            return;
-        }
-        recursive(head.next);
-        System.out.println();
-    }
-    private void recursive(ListNode p){
-        if(p!= null){
-            recursive(p.next);
-            System.out.print(p.value + " ");
-        }
-    }
-
 }
