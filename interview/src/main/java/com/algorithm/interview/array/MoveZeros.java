@@ -12,9 +12,27 @@ import java.util.Arrays;
 public class MoveZeros {
 
     public static void main(String[] args) {
-        int[] nums = {0, 1, 0, 1, 12};
-        new MoveZeros().moveZeroes(nums);
+        int[] nums = {0, 1, 0, 1, 0, 6, 12, 0};
+//        new MoveZeros().moveZeroes(nums);
+        moveZeros(nums);
+
         System.out.println(Arrays.toString(nums));
+    }
+
+    public static void moveZeros(int[] nums) {
+        int len = nums.length;
+        int fast = 0, slow = 0;
+        while (fast < len) {
+            if (nums[fast] != 0) {
+                nums[slow] = nums[fast];
+                slow++;
+            }
+            fast++;
+        }
+
+        for (; slow < len; slow++) {
+            nums[slow] = 0;
+        }
     }
 
     /**

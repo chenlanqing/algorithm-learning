@@ -14,4 +14,55 @@ package com.algorithm.datastructure.linkedlist;
  */
 public class RemoveDuplicateElement {
 
+    public static void main(String[] args) {
+        int[] array = {1, 1, 2, 2, 2, 3, 4, 5, 5, 5, 6};
+        ListNode head = ListNode.arrayToNode(array);
+        ListNode.printList(head);
+
+//        ListNode.printList(removeDuplicateNode(head));
+
+
+        ListNode.printList(deleteDuplicates(head));
+    }
+
+    private static ListNode removeDuplicateNode(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null) {
+            if (slow.value != fast.value) {
+                slow.next = fast;
+                slow = slow.next;
+            }
+            fast = fast.next;
+        }
+        slow.next = null;
+        return head;
+    }
+
+    public static ListNode deleteDuplicates(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        } else {
+            ListNode pre = head;
+            ListNode p = head.next;
+            while (p != null) {
+                if (pre.value == p.value) {
+                    while (p != null && pre.value == p.value) {
+                        p = p.next;
+                    }
+                    pre.next = p;
+                } else {
+                    pre = p;
+                    p = p.next;
+                }
+            }
+            return head;
+        }
+    }
+
 }

@@ -29,8 +29,13 @@ public class ListNode {
     public static void printList(ListNode head) {
         ListNode p = head;
         while (p != null) {
-            System.out.print(p.value + " ");
+            int value = p.value;
             p = p.next;
+            if (p == null) {
+                System.out.print(value + "");
+            } else {
+                System.out.print(value + " --> ");
+            }
         }
         System.out.println();
     }
