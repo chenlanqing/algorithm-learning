@@ -1,0 +1,19 @@
+*.class
+*.exe
+*.war
+
+# IDEA project file #
+#####################
+.idea
+*.ids
+*.iml
+*.iws
+*.ipr
+
+data/
+
+# Maven generated files #
+#########################
+target
+
+out
