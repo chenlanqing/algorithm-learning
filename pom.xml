@@ -16,7 +16,6 @@
         <module>interview</module>
         <module>tree</module>
         <module>leetcode</module>
-        <module>utils</module>
     </modules>
 
     <parent>

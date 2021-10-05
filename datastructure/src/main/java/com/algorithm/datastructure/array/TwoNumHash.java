@@ -1,6 +1,6 @@
 package com.algorithm.datastructure.array;
 
-import com.algorithm.utils.ArrayUtils;
+import com.algorithm.common.utils.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

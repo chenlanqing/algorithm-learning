@@ -1,7 +1,7 @@
 package com.algorithm.sort.advanced.heap;
 
 
-import com.algorithm.utils.ArrayUtils;
+import com.algorithm.common.utils.ArrayUtils;
 
 /**
  * 索引堆：索引和索引对应的数据两个数组，使用索引数组来构建堆。

@@ -1,5 +1,6 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
 import java.util.Stack;
 
 /**

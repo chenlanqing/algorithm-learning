@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * @author QingFan 2020-09-13
  * @version 1.0.0

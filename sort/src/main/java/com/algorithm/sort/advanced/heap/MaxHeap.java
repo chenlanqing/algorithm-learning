@@ -1,7 +1,7 @@
 package com.algorithm.sort.advanced.heap;
 
 
-import com.algorithm.utils.ArrayUtils;
+import com.algorithm.common.utils.ArrayUtils;
 
 /**
  * 最大堆：完全二叉树

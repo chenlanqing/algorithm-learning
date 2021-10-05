@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * 链表的最大元素
  *

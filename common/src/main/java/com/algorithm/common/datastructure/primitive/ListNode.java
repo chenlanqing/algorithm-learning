@@ -1,8 +1,10 @@
-package com.algorithm.datastructure.linkedlist;
+package com.algorithm.common.datastructure.primitive;
 
 import java.util.List;
 
 /**
+ * 单向链表
+ *
  * @author bluefish 2018/7/16
  * @version 1.0.0
  */

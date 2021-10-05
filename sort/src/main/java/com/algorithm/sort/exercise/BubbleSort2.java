@@ -1,6 +1,6 @@
 package com.algorithm.sort.exercise;
 
-import com.algorithm.utils.ArrayUtils;
+import com.algorithm.common.utils.ArrayUtils;
 
 /**
  * 冒泡排序优化：对于近乎有序的数组

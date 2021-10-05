@@ -1,7 +1,7 @@
 package com.algorithm.sort.base.shell;
 
-import com.algorithm.utils.ArrayUtils;
-import com.algorithm.utils.sort.SortInt;
+import com.algorithm.common.utils.ArrayUtils;
+import com.algorithm.common.algorithm.sort.SortInt;
 
 /**
  * 希尔排序是对插入排序的一种改进,它的核心思想是将待排序数组中任意间隔为h的元素都变为有序的,这样的数组叫做h有序数组.<br/>

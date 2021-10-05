@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * 给定单链表、值val，删除所有值为val的节点
  * <p>

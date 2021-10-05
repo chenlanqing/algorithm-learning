@@ -1,7 +1,7 @@
 package com.algorithm.sort.base.select;
 
-import com.algorithm.utils.ArrayUtils;
-import com.algorithm.utils.sort.SortInt;
+import com.algorithm.common.utils.ArrayUtils;
+import com.algorithm.common.algorithm.sort.SortInt;
 
 import java.util.Arrays;
 

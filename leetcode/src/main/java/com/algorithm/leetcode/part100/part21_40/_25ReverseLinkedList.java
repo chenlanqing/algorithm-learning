@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.part100.part21_40;
 
-import com.algorithm.datastructure.linkedlist.ListNode;
+import com.algorithm.common.datastructure.primitive.ListNode;
 
 /**
  * leetcode 25:

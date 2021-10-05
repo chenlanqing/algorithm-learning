@@ -1,7 +1,7 @@
 package com.algorithm.sort.base.bubble;
 
-import com.algorithm.utils.ArrayUtils;
-import com.algorithm.utils.sort.SortInt;
+import com.algorithm.common.utils.ArrayUtils;
+import com.algorithm.common.algorithm.sort.SortInt;
 
 /**
  * 冒泡排序优化方案2:

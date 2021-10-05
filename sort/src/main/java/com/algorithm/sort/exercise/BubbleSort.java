@@ -1,10 +1,5 @@
 package com.algorithm.sort.exercise;
 
-import static com.algorithm.sort.exercise.SortTests.genArray;
-
-import com.algorithm.utils.ArrayUtils;
-import org.junit.Test;
-
 /**
  * 冒泡排序
  *

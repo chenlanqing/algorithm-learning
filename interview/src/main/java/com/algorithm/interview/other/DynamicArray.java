@@ -1,4 +1,4 @@
-package com.algorithm.common.algorithm;
+package com.algorithm.interview.other;
 
 
 /**

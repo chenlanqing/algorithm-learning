@@ -1,8 +1,7 @@
-package com.algorithm.utils;
+package com.algorithm.common.utils;
 
 
-import com.algorithm.utils.sort.SortInt;
-
+import com.algorithm.common.algorithm.sort.SortInt;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -131,6 +130,7 @@ public class ArrayUtils {
      * @param n
      */
     public static void print(int[] arr, int n) {
+        n = arr.length;
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }

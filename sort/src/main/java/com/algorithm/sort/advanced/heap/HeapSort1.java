@@ -1,7 +1,7 @@
 package com.algorithm.sort.advanced.heap;
 
-import com.algorithm.utils.ArrayUtils;
-import com.algorithm.utils.sort.SortInt;
+import com.algorithm.common.utils.ArrayUtils;
+import com.algorithm.common.algorithm.sort.SortInt;
 
 /**
  * 基础堆排序

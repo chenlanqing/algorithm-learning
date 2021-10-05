@@ -1,7 +1,7 @@
 package com.algorithm.sort.base.insert;
 
-import com.algorithm.utils.ArrayUtils;
-import com.algorithm.utils.sort.SortInt;
+import com.algorithm.common.utils.ArrayUtils;
+import com.algorithm.common.algorithm.sort.SortInt;
 
 /**
  * 优化插入排序方法:在内存循环时,不直接交换数据,而是查找到当前元素应该放入的合适位置<br/>

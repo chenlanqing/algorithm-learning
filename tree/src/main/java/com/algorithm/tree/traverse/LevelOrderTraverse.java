@@ -1,6 +1,6 @@
 package com.algorithm.tree.traverse;
 
-import com.algorithm.tree.common.BinaryTreeNode;
+import com.algorithm.common.datastructure.primitive.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -14,13 +14,13 @@ import java.util.Queue;
 public class LevelOrderTraverse {
 
     public static void main(String[] args) {
-        BinaryTreeNode root = new BinaryTreeNode(10);
+        TreeNode root = new TreeNode(10);
         // 构建一棵树
-        Queue<BinaryTreeNode> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
-            BinaryTreeNode node = queue.remove();
+            TreeNode node = queue.remove();
             System.out.println(node.value);
             if (node.left != null) {
                 queue.add(node.left);

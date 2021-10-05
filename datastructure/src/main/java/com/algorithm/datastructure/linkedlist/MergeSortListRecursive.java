@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * 合并有序链表：递归实现
  *

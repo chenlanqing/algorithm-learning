@@ -1,11 +1,11 @@
 package com.algorithm.sort;
 
+import com.algorithm.common.utils.ArrayUtils;
 import com.algorithm.sort.advanced.heap.HeapSort1;
 import com.algorithm.sort.advanced.heap.HeapSort2;
 import com.algorithm.sort.advanced.merge.MergeSortOpt;
 import com.algorithm.sort.advanced.quick.QuickSort;
 import com.algorithm.sort.advanced.quick.QuickSort3Ways;
-import com.algorithm.utils.ArrayUtils;
 import org.junit.Test;
 
 public class TestAdvancedSort {

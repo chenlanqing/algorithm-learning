@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * 删除链表中的重复元素
  * <p>

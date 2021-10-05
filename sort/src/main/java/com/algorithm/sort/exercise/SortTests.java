@@ -1,6 +1,6 @@
 package com.algorithm.sort.exercise;
 
-import com.algorithm.utils.ArrayUtils;
+import com.algorithm.common.utils.ArrayUtils;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,11 +32,11 @@ public class SortTests {
         sortTest(BubbleSort.class, 100000);
 //        sortOrderTest(BubbleSort2.class, 100000, 0);
     }
-//
-//    @Test
-//    public void test_mergeSort(){
-//        sortTest(MergeSort.class, 100000);
-//    }
+
+    @Test
+    public void test_mergeSort() {
+        sortTest(MergeSort.class, 100000);
+    }
 //
 //    @Test
 //    public void test_quickSort(){
@@ -87,9 +87,9 @@ public class SortTests {
             var constructor = cls.getConstructor();
             var rawInst = constructor.newInstance();
             var start = System.currentTimeMillis();
-            if (rawInst instanceof IImutableSorter) {
+            if (rawInst instanceof MutableSorter) {
                 var A = gen(N);
-                var inst = (IImutableSorter) rawInst;
+                var inst = (MutableSorter) rawInst;
                 A = inst.sort(A);
                 System.out.println("time usage:" + (System.currentTimeMillis() - start));
                 assertSorted(A);
@@ -112,9 +112,9 @@ public class SortTests {
             var constructor = cls.getConstructor();
             var rawInst = constructor.newInstance();
             var start = System.currentTimeMillis();
-            if (rawInst instanceof IImutableSorter) {
+            if (rawInst instanceof MutableSorter) {
                 var A = gen(N);
-                var inst = (IImutableSorter) rawInst;
+                var inst = (MutableSorter) rawInst;
                 A = inst.sort(A);
                 System.out.println("time usage:" + (System.currentTimeMillis() - start));
                 assertSorted(A);
@@ -140,7 +140,6 @@ public class SortTests {
         Integer o = Integer.MIN_VALUE;
         for (var i : A) {
             if (o > i) {
-                System.out.println(A.toString());
                 Assert.fail("Array not in sorted order");
             }
             o = i;

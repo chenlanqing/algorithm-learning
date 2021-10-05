@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * leetCode：https://leetcode.com/problems/middle-of-the-linked-list
  *

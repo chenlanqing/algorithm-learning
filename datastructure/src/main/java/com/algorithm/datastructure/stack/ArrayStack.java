@@ -1,6 +1,6 @@
 package com.algorithm.datastructure.stack;
 
-import com.algorithm.common.algorithm.Array;
+import com.algorithm.common.datastructure.primitive.Array;
 
 /**
  * @author QingFan 2020-11-08

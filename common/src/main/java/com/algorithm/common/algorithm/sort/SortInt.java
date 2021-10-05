@@ -1,4 +1,4 @@
-package com.algorithm.utils.sort;
+package com.algorithm.common.algorithm.sort;
 
 /**
  * Created by BlueFish on 2017/4/3.

@@ -12,4 +12,11 @@
     <artifactId>tree</artifactId>
 
     <name>tree</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.algorithm</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+    </dependencies>
 </project>

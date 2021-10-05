@@ -1,5 +1,7 @@
 package com.algorithm.datastructure.linkedlist;
 
+import com.algorithm.common.datastructure.primitive.ListNode;
+
 /**
  * 删除倒数第N个节点：https://leetcode.com/problems/remove-nth-node-from-end-of-list/
  *

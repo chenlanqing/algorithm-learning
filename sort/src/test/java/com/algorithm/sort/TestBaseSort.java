@@ -1,10 +1,10 @@
 package com.algorithm.sort;
 
+import com.algorithm.common.utils.ArrayUtils;
 import com.algorithm.sort.base.bubble.BubbleSortInt;
 import com.algorithm.sort.base.bubble.BubbleSortIntOpt1;
 import com.algorithm.sort.base.bubble.BubbleSortIntOpt2;
 import com.algorithm.sort.base.shell.ShellSortInt;
-import com.algorithm.utils.ArrayUtils;
 import org.junit.Test;
 
 import java.util.Arrays;
