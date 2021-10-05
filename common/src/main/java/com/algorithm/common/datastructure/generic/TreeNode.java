@@ -9,13 +9,10 @@ public class TreeNode<T> {
     public TreeNode<T> left;
     public TreeNode<T> right;
 
-    public <T> int heightOf(TreeNode<T> node) {
-        if(node == null) {
-            return 0;
-        }
-        return Math.max(
-                heightOf(node.left),
-                heightOf(node.right)
-        ) + 1;
+    public TreeNode() {
+    }
+
+    public TreeNode(T value) {
+        this.value = value;
     }
 }
