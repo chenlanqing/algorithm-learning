@@ -43,10 +43,10 @@ public class PrintBinaryTree3 {
                 TreeNode node = queue.poll();
                 // 如果是奇数层，那么按顺序添加到双端队列的尾部
                 if (isOddNumber) {
-                    temp.addLast(node.value);
+                    temp.addLast(node.val);
                 } else {
                     // 如果是偶数层，那么按顺序添加到双端队列的头部
-                    temp.addFirst(node.value);
+                    temp.addFirst(node.val);
                 }
                 // 判断当前节点的左子节点是否有值，如果有，则添加到 queue 中
                 if (node.left != null) {

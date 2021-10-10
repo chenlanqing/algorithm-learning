@@ -21,7 +21,7 @@ public class LevelOrderTraverse {
 
         while (!queue.isEmpty()) {
             TreeNode node = queue.remove();
-            System.out.println(node.value);
+            System.out.println(node.val);
             if (node.left != null) {
                 queue.add(node.left);
             }

@@ -1,6 +1,6 @@
 package com.algorithm.tree.interview;
 
-import com.algorithm.common.datastructure.primitive.TreeNode;
+import com.algorithm.common.datastructure.generic.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -20,7 +20,7 @@ import java.util.Queue;
  */
 public class PrintBinaryTree2 {
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode<Integer> root) {
         // 设置 res 用来保存输出结果
         List<List<Integer>> res = new LinkedList<>();
         // 边界情况处理
@@ -28,7 +28,7 @@ public class PrintBinaryTree2 {
             return res;
         }
         // 设置一个队列，用来存储二叉树中的元素
-        Queue<TreeNode> queue = new LinkedList<>();
+        Queue<TreeNode<Integer>> queue = new LinkedList<>();
         // 队列添加二叉树的根节点
         queue.add(root);
         // 遍历队列，直到队列为空，说明访问了二叉树中所有的节点
@@ -40,7 +40,7 @@ public class PrintBinaryTree2 {
             // 使用 for 循环，将 queue 中的元素添加的 temp 中
             for (int i = 0; i < size; i++) {
                 // 从 queue 中取出一个节点
-                TreeNode node = queue.poll();
+                TreeNode<Integer> node = queue.poll();
                 // 把节点存放到 list 中
                 temp.add(node.value);  //将节点值加入list
                 // 判断当前节点的左子节点是否有值，如果有，则添加到 queue 中
