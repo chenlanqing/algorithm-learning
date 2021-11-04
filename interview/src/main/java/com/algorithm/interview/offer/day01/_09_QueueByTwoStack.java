@@ -20,8 +20,8 @@ public class _09_QueueByTwoStack {
 
     static class CQueue {
 
-        private Stack<Integer> in;
-        private Stack<Integer> out;
+        private final Stack<Integer> in;
+        private final Stack<Integer> out;
 
         public CQueue() {
             in = new Stack<>();

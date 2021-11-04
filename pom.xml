@@ -8,6 +8,7 @@
     <artifactId>algorithm</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>sort</module>
         <module>common</module>
@@ -55,11 +56,6 @@
             <dependency>
                 <groupId>com.algorithm</groupId>
                 <artifactId>tree</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.algorithm</groupId>
-                <artifactId>utils</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>

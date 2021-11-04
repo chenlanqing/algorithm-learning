@@ -33,7 +33,7 @@ public class TreeUtils {
         if (root == null) {
             return;
         }
-        System.out.println(root.value);
+        System.out.print(root.value + " ");
         preOrder(root.left);
         preOrder(root.right);
     }
@@ -64,7 +64,7 @@ public class TreeUtils {
         }
         postOrder(root.left);
         postOrder(root.right);
-        System.out.println(root.value);
+        System.out.print(root.value + " ");
     }
 
     /**
