@@ -1,6 +1,5 @@
 package com.algorithm.search.binary;
 
-import com.algorithm.utils.FileUtils;
 import org.junit.Test;
 
 import java.io.InputStream;
@@ -16,7 +15,7 @@ public class BSTTest {
         String fileName = "bible-short.txt";
         InputStream in = this.getClass().getClassLoader().getResourceAsStream(fileName);
         Vector<String> words = new Vector<String>();
-        FileUtils.readFile(in, words);
+//        FileUtils.readFile(in, words);
         System.out.println("There are totally " + words.size() + " word in " + fileName);
         System.out.println("****************************************************");
 
