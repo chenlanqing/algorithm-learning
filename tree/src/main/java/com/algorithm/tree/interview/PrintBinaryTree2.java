@@ -42,7 +42,7 @@ public class PrintBinaryTree2 {
                 // 从 queue 中取出一个节点
                 TreeNode<Integer> node = queue.poll();
                 // 把节点存放到 list 中
-                temp.add(node.value);  //将节点值加入list
+                temp.add(node.val);  //将节点值加入list
                 // 判断当前节点的左子节点是否有值，如果有，则添加到 queue 中
                 if (node.left != null) {
                     queue.add(node.left);

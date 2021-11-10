@@ -5,14 +5,14 @@ package com.algorithm.common.datastructure.generic;
  * @version 1.0.0
  */
 public class TreeNode<T> {
-    public T value;
+    public T val;
     public TreeNode<T> left;
     public TreeNode<T> right;
 
     public TreeNode() {
     }
 
-    public TreeNode(T value) {
-        this.value = value;
+    public TreeNode(T val) {
+        this.val = val;
     }
 }

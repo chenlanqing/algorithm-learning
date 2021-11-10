@@ -45,7 +45,7 @@ public class PrintBinaryTree {
 
         while (!queue.isEmpty()) {
             TreeNode<Integer> node = queue.poll();
-            list.add(node.value);
+            list.add(node.val);
             // 判断该节点是否有左右子节点
             // 如果左子节点有值，则把左子节点加入到队列中
             if (node.left != null) {

@@ -19,7 +19,7 @@ public class TreeUtils {
         if (root == null) {
             return;
         }
-        list.add(root.value);
+        list.add(root.val);
         preOrder(root.left, list);
         preOrder(root.right, list);
     }
@@ -33,7 +33,7 @@ public class TreeUtils {
         if (root == null) {
             return;
         }
-        System.out.print(root.value + " ");
+        System.out.print(root.val + " ");
         preOrder(root.left);
         preOrder(root.right);
     }
@@ -49,7 +49,7 @@ public class TreeUtils {
             return;
         }
         inOrder(root.left, list);
-        list.add(root.value);
+        list.add(root.val);
         inOrder(root.right, list);
     }
 
@@ -64,7 +64,7 @@ public class TreeUtils {
         }
         postOrder(root.left);
         postOrder(root.right);
-        System.out.print(root.value + " ");
+        System.out.print(root.val + " ");
     }
 
     /**
@@ -79,7 +79,7 @@ public class TreeUtils {
         }
         postOrder(root.left, list);
         postOrder(root.right, list);
-        list.add(root.value);
+        list.add(root.val);
     }
 
     /**
@@ -92,7 +92,7 @@ public class TreeUtils {
             return;
         }
         inOrder(root.left);
-        System.out.println(root.value);
+        System.out.println(root.val);
         inOrder(root.right);
     }
 
@@ -149,7 +149,7 @@ public class TreeUtils {
         var nums = Math.pow(2, h);
         var pos = base + (int) (W / (nums * 2));
 
-        var str = node.value.toString();
+        var str = node.val.toString();
         for (int i = 0; i < str.length(); i++) {
             lines[h * 2].setCharAt(pos + i, str.charAt(i));
         }
