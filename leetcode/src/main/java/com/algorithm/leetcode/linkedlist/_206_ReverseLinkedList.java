@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.linkedlist;
 
-import com.algorithm.leetcode.ListNode;
+import com.algorithm.common.datastructure.primitive.ListNode;
 
 /**
  * leetcode：https://leetcode.com/problems/reverse-linked-list/

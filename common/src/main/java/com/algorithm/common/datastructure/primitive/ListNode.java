@@ -59,6 +59,20 @@ public class ListNode {
         System.out.println();
     }
 
+    public static void printListInError(ListNode head) {
+        ListNode p = head;
+        while (p != null) {
+            int value = p.val;
+            p = p.next;
+            if (p == null) {
+                System.err.print(value + "");
+            } else {
+                System.err.print(value + " --> ");
+            }
+        }
+        System.out.println();
+    }
+
     /**
      * 将一个数组转换为链表
      *

@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.linkedlist;
 
-import com.algorithm.leetcode.ListNode;
+import com.algorithm.common.datastructure.primitive.ListNode;
 
 /**
  * @author QingFan

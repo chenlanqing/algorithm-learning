@@ -1,8 +1,6 @@
 package com.algorithm.leetcode.linkedlist;
 
-import com.algorithm.leetcode.ListNode;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
+import com.algorithm.common.datastructure.primitive.ListNode;
 
 /**
  * fixme 待完成
