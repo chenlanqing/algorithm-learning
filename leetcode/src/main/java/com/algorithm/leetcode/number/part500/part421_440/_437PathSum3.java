@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.number.part500.part421_440;
 
-import com.algorithm.leetcode.TreeNode;
+import com.algorithm.common.datastructure.primitive.TreeNode;
 
 /**
  * @author bluefish 2019-04-06

@@ -1,7 +1,6 @@
 package com.algorithm.leetcode.number.part300.part241_260;
 
-import com.algorithm.leetcode.TreeNode;
-
+import com.algorithm.common.datastructure.primitive.TreeNode;
 import java.util.List;
 
 /**

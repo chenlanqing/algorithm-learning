@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.number.part200.part101_120;
 
-import com.algorithm.leetcode.TreeNode;
+import com.algorithm.common.datastructure.primitive.TreeNode;
 
 /**
  * 给出一颗二叉树一级一个数字sum

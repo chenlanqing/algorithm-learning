@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.number.part300.part221_240;
 
-import com.algorithm.leetcode.TreeNode;
+import com.algorithm.common.datastructure.primitive.TreeNode;
 
 /**
  * 给定一颗二分搜索树和两个节点，寻找着两个节点最近公共祖先；<br/>

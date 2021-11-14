@@ -29,7 +29,8 @@ public class PartitionLinkedList {
     }
 
     /**
-     * 使用6个变量： 小于val的头、尾节点； 等于val的头、尾节点； 大于val的头、尾节点； 最后将这小于val的尾节点连接等于val的头节点、将等于val的尾节点连接大于val的头结点
+     * 使用6个变量： 小于val的头、尾节点； 等于val的头、尾节点； 大于val的头、尾节点；
+     * 最后将这小于val的尾节点连接等于val的头节点、将等于val的尾节点连接大于val的头结点
      */
     public static ListNode partitionList(ListNode head, int val) {
         if (head == null) {

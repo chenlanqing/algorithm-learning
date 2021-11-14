@@ -1,5 +1,7 @@
 package com.algorithm.datastructure;
 
+import com.algorithm.datastructure.array.DynamicArray;
+import com.algorithm.datastructure.stack.ArrayStack;
 import java.util.Arrays;
 
 /**
@@ -9,6 +11,14 @@ import java.util.Arrays;
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println(new String("\\xE9\\xAA\\x8C\\xE8\\xAF\\x81\\xE7\\xA0\\x81\\xE9\\x94\\x99\\xE8\\xAF\\xAF"));
+        ArrayStack<Integer> stack = new ArrayStack<>();
+
+        for(int i = 0 ; i < 5 ; i ++){
+            stack.push(i);
+            System.out.println(stack);
+        }
+
+        stack.pop();
+        System.out.println(stack);
     }
 }

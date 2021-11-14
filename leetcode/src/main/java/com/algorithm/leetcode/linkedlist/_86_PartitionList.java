@@ -9,6 +9,7 @@ import com.algorithm.common.utils.ArrayUtils;
  * @author QingFan
  * @version 1.0.0
  * @date 2021年11月12日 11:21
+ * @see PartitionLinkedList
  */
 public class _86_PartitionList {
 
