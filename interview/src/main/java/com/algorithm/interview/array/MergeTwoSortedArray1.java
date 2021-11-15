@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.array;
+package com.algorithm.interview.array;
 
 import com.algorithm.common.utils.ArrayUtils;
 

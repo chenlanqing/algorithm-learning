@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.linkedlist;
+package com.algorithm.interview.linkedlist;
 
 import com.algorithm.common.datastructure.primitive.ListNode;
 

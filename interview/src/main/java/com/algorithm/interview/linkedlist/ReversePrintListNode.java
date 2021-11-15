@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.linkedlist;
+package com.algorithm.interview.linkedlist;
 
 import com.algorithm.common.datastructure.primitive.ListNode;
 import java.util.Stack;
@@ -7,9 +7,9 @@ import java.util.Stack;
  * 逆序打印链表
  *
  * <p>
- * 方法1：使用额外的空间（栈来实现）{@link com.algorithm.datastructure.linkedlist.ReversePrintListNode#reverseNode}
+ * 方法1：使用额外的空间（栈来实现）{@link ReversePrintListNode#reverseNode}
  * <p>
- * 方法2：使用递归来实现 {@link com.algorithm.datastructure.linkedlist.ReversePrintListNode#recursiveReverseNode}
+ * 方法2：使用递归来实现 {@link ReversePrintListNode#recursiveReverseNode}
  *
  * @author bluefish 2019-06-24
  * @version 1.0.0

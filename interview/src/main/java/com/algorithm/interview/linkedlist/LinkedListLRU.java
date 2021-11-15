@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.linkedlist;
+package com.algorithm.interview.linkedlist;
 
 /**
  * @author QingFan 2021/9/12

@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.linkedlist;
+package com.algorithm.interview.linkedlist;
 
 import java.util.HashMap;
 import java.util.Map;

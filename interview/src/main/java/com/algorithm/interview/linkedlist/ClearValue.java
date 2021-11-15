@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.linkedlist;
+package com.algorithm.interview.linkedlist;
 
 import com.algorithm.common.datastructure.primitive.ListNode;
 
@@ -9,7 +9,7 @@ import com.algorithm.common.datastructure.primitive.ListNode;
  */
 public class ClearValue {
 
-    public ListNode clear(ListNode head, int val) {
+    public ListNode clear_2(ListNode head, int val) {
         if (head == null) {
             return null;
         }
@@ -47,5 +47,16 @@ public class ClearValue {
             }
         }
         return dummy.next;
+    }
+
+    public ListNode removeElements(ListNode head, int val) {
+        if (head == null) {
+            return null;
+        }
+        head.next = removeElements(head.next, val);
+        if (head.val == val) {
+            return head.next;
+        }
+        return head;
     }
 }

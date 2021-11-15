@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.array;
+package com.algorithm.interview.array;
 
 /**
  * @author bluefish 2019-04-04

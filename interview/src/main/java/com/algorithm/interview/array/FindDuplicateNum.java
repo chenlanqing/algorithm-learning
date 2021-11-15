@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.array;
+package com.algorithm.interview.array;
 
 /**
  * https://leetcode-cn.com/problems/find-the-duplicate-number/

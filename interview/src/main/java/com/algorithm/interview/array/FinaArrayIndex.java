@@ -1,4 +1,4 @@
-package com.algorithm.datastructure.array;
+package com.algorithm.interview.array;
 
 /**
  * 求数组中比左边元素都大同时比右边元素都小的元素，返回这些元素的索引
