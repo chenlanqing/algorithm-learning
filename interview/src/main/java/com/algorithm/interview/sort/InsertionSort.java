@@ -6,7 +6,7 @@ import com.algorithm.common.utils.ArrayUtils;
  * @author QingFan 2021/10/3
  * @version 1.0.0
  */
-public class InsertSort {
+public class InsertionSort {
 
     public static void main(String[] args) {
         int[] A = ArrayUtils.generateRandomArray(10, 1, 100);

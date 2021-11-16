@@ -18,7 +18,7 @@ public class MergeSortInterview {
         System.out.println("--------");
 
         ArrayUtils.print(B, 10);
-        SelectSort.sort(B);
+        SelectionSort.sort(B);
         ArrayUtils.print(B, 10);
     }
 
