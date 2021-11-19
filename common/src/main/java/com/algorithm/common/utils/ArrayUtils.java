@@ -137,6 +137,17 @@ public class ArrayUtils {
         System.out.println();
     }
 
+    public static void print(int[] arr, String message) {
+        int n = arr.length;
+        StringBuilder sb = new StringBuilder();
+        sb.append(message).append("[");
+        for (int i = 0; i < n; i++) {
+            sb.append(arr[i]).append(" ");
+        }
+        sb.append("]");
+        System.out.println(sb.toString());
+    }
+
 
     public static void toString(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
