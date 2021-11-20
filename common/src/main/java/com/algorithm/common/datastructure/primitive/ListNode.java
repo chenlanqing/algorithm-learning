@@ -45,6 +45,23 @@ public class ListNode {
         System.out.println();
     }
 
+    public void circleListPrint() {
+        ListNode head = new ListNode(0);
+        head.next = this;
+        ListNode p = this;
+        while (p != null) {
+            int value = p.val;
+            p = p.next;
+            if (p == head.next) {
+                System.out.print(value + "");
+                break;
+            } else {
+                System.out.print(value + " --> ");
+            }
+        }
+        System.out.println();
+    }
+
     public static void printList(ListNode head) {
         ListNode p = head;
         while (p != null) {

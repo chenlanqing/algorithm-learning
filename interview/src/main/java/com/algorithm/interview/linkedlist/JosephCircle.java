@@ -14,7 +14,9 @@ public class JosephCircle {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         ListNode node = ListNode.arrayToCircle(arr);
-        new JosephCircle().josephusCircle(node, 5, 1, 3);
+        node.circleListPrint();
+        new JosephCircle().josephusCircle(node, 5, 1, 2);
+        node.circleListPrint();
     }
 
     /**
@@ -42,7 +44,7 @@ public class JosephCircle {
         for (int i = 1; i < step - 1; i++) {
             pre = pre.next;
         }
-        System.out.println(pre.next.val);
+        System.out.print(pre.next.val + "\t");
         pre.next = pre.next.next;
         return pre.next;
     }
@@ -64,5 +66,6 @@ public class JosephCircle {
             startNode = countAndRemove(startNode, step);
         }
         startNode.next = null;
+        System.out.println();
     }
 }
