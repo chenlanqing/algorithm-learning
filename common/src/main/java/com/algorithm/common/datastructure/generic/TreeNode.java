@@ -15,4 +15,10 @@ public class TreeNode<T> {
     public TreeNode(T val) {
         this.val = val;
     }
+
+    public TreeNode(T val, TreeNode<T> left, TreeNode<T> right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
 }

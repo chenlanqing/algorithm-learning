@@ -10,10 +10,9 @@ public class ArrayUtils {
     /**
      * 生成某个范围内的随机数组
      *
-     * @param n      数组大小
+     * @param n 数组大小
      * @param rangeL 数组的数据最小值
      * @param rangeR 数组数据的最大值
-     * @return
      */
     public static int[] generateRandomArray(int n, int rangeL, int rangeR) {
         System.out.println("The random array sort:" + n);
@@ -31,9 +30,8 @@ public class ArrayUtils {
     /**
      * 生成一个近似有序的数组
      *
-     * @param n         数组长度
+     * @param n 数组长度
      * @param swapTimes 打乱排序的次数
-     * @return
      */
     public static int[] generateNearySortArray(int n, int swapTimes) {
         System.out.println("The nearly array sort:" + n);
@@ -52,16 +50,9 @@ public class ArrayUtils {
     }
 
     /**
-     * 交换数组的两个值<br/>
-     * 对于整型数据,比较高效的交换数据的方式是通过位运算的,但是这里会存在一个问题,如果刚好当前位置的数据与最小的数据处于同一位置,运算结果为0;<br/>
-     * 比如:arr[] = {8,9,1,6,3,5,4,7,2} 经过多次排序结果为:<br/>
-     * arr[] = {1,2,3,4,5,6,7,8,9}; 这时还没排序完<br/>
-     * i = 7, min = 7 <br/>
-     * arr[i] ^= arr[min]; ==> arr[i] = 0 ,即数组变为:{1,2,3,4,5,6,7,0,9},这时侯 arr[min] = 0.
-     *
-     * @param arr
-     * @param i
-     * @param min
+     * 交换数组的两个值<br/> 对于整型数据,比较高效的交换数据的方式是通过位运算的,但是这里会存在一个问题,如果刚好当前位置的数据与最小的数据处于同一位置,运算结果为0;<br/> 比如:arr[] =
+     * {8,9,1,6,3,5,4,7,2} 经过多次排序结果为:<br/> arr[] = {1,2,3,4,5,6,7,8,9}; 这时还没排序完<br/> i = 7, min = 7 <br/> arr[i] ^=
+     * arr[min]; ==> arr[i] = 0 ,即数组变为:{1,2,3,4,5,6,7,0,9},这时侯 arr[min] = 0.
      */
     public static void exchange(int[] arr, int i, int min) {
 //        int temp = arr[i];
@@ -78,9 +69,6 @@ public class ArrayUtils {
 
     /**
      * 是否为升序数组
-     *
-     * @param arr
-     * @param n
      */
     public static boolean isAscSort(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
@@ -94,9 +82,6 @@ public class ArrayUtils {
 
     /**
      * 是否为升序数组
-     *
-     * @param arr
-     * @param n
      */
     public static boolean isDescSort(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
@@ -111,9 +96,9 @@ public class ArrayUtils {
      * 测试排序算法的时间
      *
      * @param sortName 排序算法的名称
-     * @param sort     排序算法的具体实现实例对象
-     * @param arr      测试用例
-     * @param n        数组大小
+     * @param sort 排序算法的具体实现实例对象
+     * @param arr 测试用例
+     * @param n 数组大小
      */
     public static void testSort(String sortName, SortInt sort, int[] arr, int n) {
         long start = System.currentTimeMillis();
@@ -125,9 +110,6 @@ public class ArrayUtils {
 
     /**
      * 打印数组
-     *
-     * @param arr
-     * @param n
      */
     public static void print(int[] arr, int n) {
         n = arr.length;
@@ -158,12 +140,18 @@ public class ArrayUtils {
 
     /**
      * 拷贝数组
-     *
-     * @param arr
-     * @param len
-     * @return
      */
     public static int[] copy(int[] arr, int len) {
         return Arrays.copyOf(arr, len);
     }
+
+    public static void printMatrix(int[][] arr, int row, int col) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+
 }

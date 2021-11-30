@@ -17,6 +17,7 @@
         <module>interview</module>
         <module>tree</module>
         <module>leetcode</module>
+        <module>recursive</module>
     </modules>
 
     <parent>
