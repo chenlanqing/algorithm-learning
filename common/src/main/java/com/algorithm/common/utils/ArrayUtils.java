@@ -2,8 +2,10 @@ package com.algorithm.common.utils;
 
 
 import com.algorithm.common.algorithm.sort.SortInt;
+import io.netty.util.internal.StringUtil;
 import java.util.Arrays;
 import java.util.Random;
+import org.springframework.util.StringUtils;
 
 public class ArrayUtils {
 
@@ -120,13 +122,25 @@ public class ArrayUtils {
     }
 
     public static void print(int[] arr, String message) {
+        print(arr, message, null);
+    }
+
+    public static void print(int[] arr, String message, String split) {
         int n = arr.length;
+        split = StringUtils.isEmpty(split) ? "\t" : split;
         StringBuilder sb = new StringBuilder();
-        sb.append(message).append("[");
-        for (int i = 0; i < n; i++) {
-            sb.append(arr[i]).append(" ");
+        if (message != null) {
+            sb.append(message);
         }
-        sb.append("]");
+        sb.append("{");
+        for (int i = 0; i < n; i++) {
+            if (i < n - 1) {
+                sb.append(arr[i]).append(split);
+            } else {
+                sb.append(arr[i]);
+            }
+        }
+        sb.append("}");
         System.out.println(sb.toString());
     }
 

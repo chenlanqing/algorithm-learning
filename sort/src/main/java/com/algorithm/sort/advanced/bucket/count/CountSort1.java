@@ -1,6 +1,6 @@
-package com.algorithm.sort.advanced.count;
+package com.algorithm.sort.advanced.bucket.count;
 
-import java.util.Arrays;
+import com.algorithm.common.utils.ArrayUtils;
 import java.util.Random;
 
 /**
@@ -19,8 +19,8 @@ public class CountSort1 {
             array[i] = random.nextInt(10);
         }
 
-        System.out.println(Arrays.toString(array));
-        System.out.println(Arrays.toString(countSort(array)));
+        ArrayUtils.print(array, null, ",");
+        ArrayUtils.print(countSort(array), null, ",");
     }
 
     public static int[] countSort(int[] array) {

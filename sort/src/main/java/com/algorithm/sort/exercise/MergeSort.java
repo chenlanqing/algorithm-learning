@@ -8,6 +8,11 @@ import java.util.Arrays;
  */
 public class MergeSort implements IMutableSorter {
 
+    public static void main(String[] args) {
+        int[] arr = {55, 54, 87, 73, 29, 47, 50, 89, 20, 78};
+        new MergeSort().sort(arr);
+    }
+
     @Override
     public void sort(int[] A) {
         mergeSort(A, 0, A.length);
