@@ -18,6 +18,7 @@
         <module>tree</module>
         <module>leetcode</module>
         <module>recursive</module>
+        <module>leetcode-cn</module>
     </modules>
 
     <parent>

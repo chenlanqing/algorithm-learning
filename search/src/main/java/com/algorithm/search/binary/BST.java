@@ -13,14 +13,14 @@ import java.util.LinkedList;
  * @param <K>
  * @param <V>
  */
-public class BinarySearchTree<K extends Comparable<K>, V> {
+public class BST<K extends Comparable<K>, V> {
 
     //根节点
     private Node root;
     //树中节点个数
     private int count;
 
-    public BinarySearchTree() {
+    public BST() {
         this.root = null;
         this.count = 0;
     }

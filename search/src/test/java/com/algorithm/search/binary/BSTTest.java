@@ -21,7 +21,7 @@ public class BSTTest {
 
         // 测试BST
         long start = System.currentTimeMillis();
-        BinarySearchTree<String, Integer> bst = new BinarySearchTree<String, Integer>();
+        BST<String, Integer> bst = new BST<String, Integer>();
 
         for (String word :words){
             Integer res = bst.search(word);

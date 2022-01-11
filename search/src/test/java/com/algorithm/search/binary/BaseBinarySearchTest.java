@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class BaseBinarySearchTest {
 
-    BinarySearchTree<Integer, Integer> bst = new BinarySearchTree<Integer, Integer>();
+    BST<Integer, Integer> bst = new BST<Integer, Integer>();
     int N = 10;
     int M = 100;
 

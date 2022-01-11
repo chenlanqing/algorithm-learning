@@ -8,12 +8,15 @@ import com.algorithm.common.utils.ArrayUtils;
  */
 public class HeapSort implements SortInt {
     public static void main(String[] args) {
-        int N = 1000000;
+        int N = 10;
+//        int[] merge = ArrayUtils.generateRandomArray(N, 0, N);
+//        int[] copy = ArrayUtils.copy(merge, N);
+//        ArrayUtils.testSort("Heap Sort 2", new HeapSort2(), merge, N);
+//        ArrayUtils.testSort("Heap Sort 3", new HeapSort(), copy, N);
         int[] merge = ArrayUtils.generateRandomArray(N, 0, N);
-        int[] copy = ArrayUtils.copy(merge, N);
-        ArrayUtils.testSort("Heap Sort 2", new HeapSort2(), merge, N);
-        ArrayUtils.testSort("Heap Sort 3", new HeapSort(), copy, N);
-
+        ArrayUtils.print(merge, N);
+        new HeapSort().sort(merge, N);
+        ArrayUtils.print(merge, N);
     }
 
     @Override
