@@ -1,6 +1,7 @@
 package com.algorithm.tree.interview;
 
 import com.algorithm.common.datastructure.primitive.TreeNode;
+import com.algorithm.common.utils.TreeUtils;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -11,7 +12,15 @@ import java.util.Queue;
  */
 public class PrintBinaryTree3 {
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(0);
+        int[] arr = {3, 9, 20, 15, 7};
+        root = TreeNode.buildTree(arr, root, 0);
+        TreeNode.print(root);
+        System.out.println(levelOrder(root));
+    }
+
+    public static List<List<Integer>> levelOrder(TreeNode root) {
         // 设置 res 用来保存输出结果
         List<List<Integer>> res = new LinkedList<>();
         // 边界情况处理

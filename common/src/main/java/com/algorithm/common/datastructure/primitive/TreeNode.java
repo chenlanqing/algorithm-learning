@@ -115,4 +115,49 @@ public class TreeNode {
         }
     }
 
+    public static int heightOf(TreeNode node) {
+        if (node == null) {
+            return 0;
+        }
+        return Math.max(
+                heightOf(node.left),
+                heightOf(node.right)
+        ) + 1;
+    }
+
+    public static void print(TreeNode root) {
+        int h = heightOf(root);
+        int W = 2 * (int) Math.pow(2, h);
+        var lines = new StringBuilder[h * 2];
+        for (int i = 0; i < h * 2; i++) {
+            lines[i] = new StringBuilder(String.format("%" + W + "s", ""));
+        }
+
+        printNode(lines, W, root, 0, 0);
+        for (var line : lines) {
+            System.out.println(line.toString());
+        }
+
+    }
+
+    private static void printNode(StringBuilder[] lines, int W, TreeNode node, int h, int base) {
+        var nums = Math.pow(2, h);
+        var pos = base + (int) (W / (nums * 2));
+
+        var str = String.valueOf(node.val);
+        for (int i = 0; i < str.length(); i++) {
+            lines[h * 2].setCharAt(pos + i, str.charAt(i));
+        }
+
+        if (node.left != null) {
+            lines[h * 2 + 1].setCharAt(pos - 1, '/');
+            printNode(lines, W, node.left, h + 1, base);
+        }
+
+        if (node.right != null) {
+            lines[h * 2 + 1].setCharAt(pos + str.length() + 1, '\\');
+            printNode(lines, W, node.right, h + 1, pos);
+        }
+    }
+
 }
