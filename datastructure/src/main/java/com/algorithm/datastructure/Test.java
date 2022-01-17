@@ -1,5 +1,6 @@
 package com.algorithm.datastructure;
 
+import com.algorithm.common.utils.ArrayUtils;
 import com.algorithm.datastructure.array.DynamicArray;
 import com.algorithm.datastructure.stack.ArrayStack;
 import java.util.Arrays;
@@ -10,15 +11,29 @@ import java.util.Arrays;
  */
 public class Test {
 
-    public static void main(String[] args) {
-        ArrayStack<Integer> stack = new ArrayStack<>();
-
-        for(int i = 0 ; i < 5 ; i ++){
-            stack.push(i);
-            System.out.println(stack);
+    public static void testFor(int[] arr) {
+        final int length = arr.length;
+        long start = System.nanoTime();
+        int[] res = new int[length];
+        for (int i = 0; i < length; i++) {
+            res[i] = arr[i];
         }
+        long end = System.nanoTime();
+        System.out.printf("for cost time: %s ms \n", (end - start) / 10_0000_0000.0);
+    }
 
-        stack.pop();
-        System.out.println(stack);
+    public static void testCopy(int[] arr) {
+        final int length = arr.length;
+        long start = System.nanoTime();
+        int[] res = new int[length];
+        System.arraycopy(arr, 0, res, 0, length);
+        long end = System.nanoTime();
+        System.out.printf("copy array cost time: %s ms \n", (end - start) / 10_0000_0000.0);
+    }
+
+    public static void main(String[] args) {
+        final int[] array = ArrayUtils.generateRandomArray(10_000_000, 0, Integer.MAX_VALUE);
+        testFor(array);
+        testCopy(array);
     }
 }
