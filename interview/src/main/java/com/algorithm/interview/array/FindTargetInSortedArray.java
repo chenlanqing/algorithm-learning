@@ -5,6 +5,7 @@ package com.algorithm.interview.array;
  * @version 1.0.0
  */
 public class FindTargetInSortedArray {
+
     public int search(int[] nums, int target) {
 
         // 寻找目标值在数组中的开始位置

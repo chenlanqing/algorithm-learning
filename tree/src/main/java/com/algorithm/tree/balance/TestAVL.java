@@ -2,6 +2,7 @@ package com.algorithm.tree.balance;
 
 import com.algorithm.common.utils.FileUtils;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * @author QingFan
@@ -11,6 +12,8 @@ import java.util.ArrayList;
 public class TestAVL {
 
     public static void main(String[] args) {
+
+        System.out.println(new Date());
 
         System.out.println("Pride and Prejudice");
 
@@ -34,4 +37,5 @@ public class TestAVL {
 
         System.out.println();
     }
+
 }
