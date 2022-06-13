@@ -30,6 +30,11 @@
         </dependency>
 
         <dependency>
+            <groupId>com.algorithm</groupId>
+            <artifactId>tree</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
