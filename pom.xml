@@ -19,6 +19,7 @@
         <module>leetcode</module>
         <module>recursive</module>
         <module>leetcode-cn</module>
+        <module>demo</module>
     </modules>
 
     <parent>
