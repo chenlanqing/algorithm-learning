@@ -122,6 +122,10 @@ public class ArrayUtils {
 		System.out.println();
 	}
 
+	public static void print(int[] arr) {
+		print(arr, arr.length);
+	}
+
 	public static void print(int[] arr, String message) {
 		print(arr, message, null);
 	}

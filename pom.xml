@@ -20,6 +20,7 @@
         <module>recursive</module>
         <module>leetcode-cn</module>
         <module>demo</module>
+        <module>repeat-code</module>
     </modules>
 
     <parent>
