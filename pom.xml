@@ -23,6 +23,7 @@
         <module>repeat-code</module>
         <module>hash</module>
         <module>math</module>
+        <module>dp</module>
     </modules>
 
     <parent>
